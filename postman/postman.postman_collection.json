@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "1ff00ce0-4c56-4b6a-8b42-ea31d530c052",
+		"name": "postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27060893"
+	},
+	"item": [
+		{
+			"name": "auth user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone_number",
+							"value": "09165949563",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxOTY4NTQyLCJpYXQiOjE3MzE5NjQ5NDIsImp0aSI6IjE2ZTExZjAzNTA1ZDRhOGY5NTg0M2YwMjIzMzgzZDM5IiwidXNlcl9pZCI6IjZkMGJkNjFhLTdiNGMtNGI2My05NWEyLWU0MzQ0MjA1YjgwMiJ9.xso_SVVWj1JFncqnmNb4e4298J3FD9XSzrW-gndRs4M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "last_name",
+							"value": "pemi",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "nr",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp-code",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxOTY4NTQyLCJpYXQiOjE3MzE5NjQ5NDIsImp0aSI6IjE2ZTExZjAzNTA1ZDRhOGY5NTg0M2YwMjIzMzgzZDM5IiwidXNlcl9pZCI6IjZkMGJkNjFhLTdiNGMtNGI2My05NWEyLWU0MzQ0MjA1YjgwMiJ9.xso_SVVWj1JFncqnmNb4e4298J3FD9XSzrW-gndRs4M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "otp_code",
+							"value": "134563",
+							"type": "text"
+						},
+						{
+							"key": "otp_token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvdHBfY29kZSI6MTM0NTYzfQ.rcrwIy69RyTrupJF6_IT80S_uUg1jkPqTkQqIRN1wdE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/otp-code/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"otp-code",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMxOTY4NTQyLCJpYXQiOjE3MzE5NjQ5NDIsImp0aSI6IjE2ZTExZjAzNTA1ZDRhOGY5NTg0M2YwMjIzMzgzZDM5IiwidXNlcl9pZCI6IjZkMGJkNjFhLTdiNGMtNGI2My05NWEyLWU0MzQ0MjA1YjgwMiJ9.xso_SVVWj1JFncqnmNb4e4298J3FD9XSzrW-gndRs4M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
